@@ -1,0 +1,12 @@
+/*charset "UTF-8";*/
+.button {
+    -fx-background-color: darkturquoise;
+}
+.button:hover {
+    -fx-background-color: lightskyblue;
+}
+
+.root {
+    -fx-font-family: "Î¢ÈíÑÅºÚ";
+
+}

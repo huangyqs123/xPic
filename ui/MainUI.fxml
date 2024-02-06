@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainUIController">
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button fx:id="openBtn" mnemonicParsing="false" onAction="#openBtnAction" text="打开" />
+            <Button fx:id="copyBtn" mnemonicParsing="false" onAction="#copyBtnAction" text="复制" />
+            <Button fx:id="pasteBtn" mnemonicParsing="false" onAction="#pasteBtnAction" text="粘贴" />
+            <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#deleteBtnAction" text="删除" />
+        </items>
+      </ToolBar>
+   </top>
+   <left>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TreeView fx:id="treeview" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+   </left>
+   <right>
+      <ScrollPane prefHeight="427.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+         <content>
+            <FlowPane fx:id="flowPane" prefHeight="508.0" prefWidth="689.0" />
+         </content>
+      </ScrollPane>
+   </right>
+   <bottom>
+      <HBox prefHeight="24.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="text" opacity="0.42" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="300.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Text>
+            <Text fx:id="textTwo" opacity="0.42" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="600.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect></Text>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
